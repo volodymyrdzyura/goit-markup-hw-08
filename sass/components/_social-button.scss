@@ -1,0 +1,92 @@
+/*--social-button--*/
+
+.social {
+    padding-top: 12px;
+
+&__list {
+    margin-right: 10px;
+}
+
+&__link
+ {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+&__text {
+    color: $absolut-white-header;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+
+&__button {
+    background-color: rgba(255, 255, 255, 0.1);
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__svg {
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    vertical-align: middle;
+}
+
+
+&__button:hover, &__button:focus {
+    color: $absolut-white-header;
+    background-color: $hover-text-color;
+    }}
+
+.social-gray {
+    
+&__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+&__item {
+        margin-right: 10px;
+    }
+    
+&__icon {
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__button:hover,
+&__button:focus
+ {
+    background-color: $hover-text-color;
+    fill: $absolut-white-header;
+}
+
+&__button:hover &__icon,
+&__button:focus &__icon {
+    fill: $absolut-white-header;
+}}
+
+.social-gray__button,
+.social__button {
+    display: flex;
+    padding: 0px;
+    width: 44px;
+    height: 44px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.social-gray__item:last-child,
+.social__list:last-child {
+    margin-right: 0px;
+}

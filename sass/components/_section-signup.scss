@@ -1,0 +1,68 @@
+/*--підписатись на розсилку--*/
+
+.section-signup {
+    display: block;
+    padding-top: 12px;
+    margin-left: 93px;
+    width: auto;
+    height: 86px;
+
+&__form {
+    display: flex;
+}
+
+&__title {
+    display: block;
+    margin: 0px 0px 20px 0px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $absolut-white-header;
+}
+
+&__input {
+    width: 358px;
+    height: 48px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: $title-footer-dark;
+    color: $absolut-white-header;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    align-items: center;
+    letter-spacing: 0.03em;
+    padding: 0px 0px 0px 15px;
+}}
+
+.button-signup {
+    position: relative;
+    display: flex;
+    width: 200px;
+    height: 50px;
+    background: #2196f3;
+    border-radius: 4px;
+    border: none;
+    margin-left: 12px;
+    cursor: pointer;
+    padding: 0px;
+
+&__text {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 30px;
+    align-items: center;
+    letter-spacing: 0.06em;
+    padding: 0px 0px 0px 29px;
+    align-self: center;
+    color: $absolut-white-header;
+}
+
+&__icon {
+    position: absolute;
+    align-self: center;
+    right: 28px;
+    fill: $absolut-white-header;
+}}

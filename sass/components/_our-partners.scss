@@ -1,0 +1,59 @@
+/* Our partners */
+.our-partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.partners {
+    padding-bottom: 94px;
+    padding-top: 94px;
+
+&__button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px $primery-text-color;
+    border-radius: 4px;
+    border-color: rgba(0, 0, 0, 0.25);
+    background-color: $absolut-white-header;
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__list {
+    width: 170px;
+    height: 92px;
+    margin-right: 30px;
+}
+
+&__list:last-child {
+    margin-right: 0px;
+}
+
+&__text {
+    margin-top: 0px;
+    margin-bottom: 50px;
+    font-style: Bold;
+    font-size: 36px;
+    line-height: 42px;
+    text-align: center;
+}
+
+&__icon {
+    justify-content: center;
+    align-items: center;
+    padding: 16px 32px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: contain;
+    fill: rgba(175, 177, 184, 1);
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+&__icon:hover,
+&__button:hover,
+&__button:focus,
+&__button:focus &__icon {
+    fill: #03a9f4;
+    border-color: $hover-text-color;
+}}

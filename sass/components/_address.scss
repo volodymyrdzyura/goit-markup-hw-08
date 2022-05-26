@@ -1,0 +1,31 @@
+/*--Оформлення адресів у футері --*/
+
+address {
+    margin-top: 20px;}
+
+.address {
+    
+&__location {
+    margin-bottom: 9px;
+}
+
+&__location:last-child {
+    margin-bottom: 0px;
+}
+
+&__location:first-child {
+    color: $absolut-white-header;
+}
+
+&__contact {
+    color: rgba(255, 255, 255, 0.6);
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}}
+
+[href*="https"] {
+    color: $absolut-white-header;
+}

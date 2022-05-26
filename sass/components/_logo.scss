@@ -1,0 +1,19 @@
+/*--оформлення першої частини логотипу--*/
+
+
+.logo {
+    color: $primery-text-color;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1;
+    letter-spacing: 0.03em;
+
+
+&__web {
+    color: $hover-text-color;
+}
+
+footer & {
+    color: $absolut-white-header;
+}}

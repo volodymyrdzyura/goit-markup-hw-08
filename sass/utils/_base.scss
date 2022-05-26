@@ -1,0 +1,62 @@
+
+::after,
+::before {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: $standart;
+    color: $primery-text-color;
+    background-color: $mine-fone-color;
+    margin: 0;
+}
+
+.header {
+    display: block;
+    border-bottom: 1px solid #ececec;
+}
+
+footer {
+    padding: 60px 0px;
+}
+
+footer {
+    background-color: $title-footer-dark;
+}
+
+.header,
+.benefits,
+.section-work,
+main {
+    background-color: $absolut-white-header;
+}
+
+.container {
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+li {
+    list-style-type: none;
+}
+
+ul,
+h1,
+h3,
+p {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    background-color: $absolut-white-header;
+}

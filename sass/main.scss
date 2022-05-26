@@ -1,0 +1,18 @@
+@import './utils/vars';
+@import './utils/base';/* базові елементи */
+@import './components/navigation';/*оформлення тексту навігаційних кнопок*/
+@import './components/contact-data';/*--Оформлення контактів--*/
+@import './components/section-work';/* Секція що ми робимо */
+@import './components/projects';/*--Оформлення карточки твару--*/
+@import './components/section-benefits';/*--Наші переваги--*/
+@import './components/filters';/*-- кнопки фільтра  --*/
+@import './components/button-hero';/*--кнопка героя--*/
+@import './components/logo';/*--оформлення логотипу--*/
+@import './components/hero-section';/*-- Секція Герой--*/
+@import './components/our-team';/* Наша команда */
+@import './components/address';/*--Оформлення адресів у футері --*/
+@import './components/our-partners';/* Our partners */
+@import './components/section-signup';/*--підписатись на розсилку--*/
+@import './components/backgrop';/* Backdrop */
+@import './components/form';/*-- Оформлення форми  --*/
+@import './components/social-button';/*--social-button--*/

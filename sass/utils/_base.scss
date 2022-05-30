@@ -1,74 +1,68 @@
-
 ::after,
 ::before {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: $standart;
-    color: $primery-text-color;
-    background-color: $mine-fone-color;
-    margin: 0;
+  font-family: $standart;
+  color: $primery-text-color;
+  background-color: $mine-fone-color;
+  margin: 0;
 }
 
 .header {
-    display: block;
-    border-bottom: 1px solid #ececec;
+  display: block;
+  border-bottom: 1px solid #ececec;
 }
-/*
-@media screen and (max-width: 486px) {
-    .header {
-        height: 60px;
 
-    }
-  }*/
-
-  footer {
-    padding: 60px 0px;
-    background-color: $title-footer-dark;
+footer {
+  padding: 60px 0px;
+  background-color: $title-footer-dark;
 }
 
 .header,
 .benefits,
 .section-work,
 main {
-    background-color: $absolut-white-header;
+  background-color: $absolut-white-header;
 }
 
 .container {
-    width: 100%;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 
-@media screen and (min-width: 480px) {
+  @media screen and (min-width: 480px) {
     & {
-    width: 480px;       
-}}
-    
-@media screen and (min-width: 768px) {
+      width: 480px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
     & {
-    width: 768px;   
-   
-}}
-    
-@media screen and (min-width: 1200px) {
+      width: 768px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
     & {
-    width: 1200px;
-}}
+      width: 1200px;
+    }
+  }
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 ul,
 h1,
 h3,
 p {
-    margin: 0;
-    padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -76,7 +70,9 @@ a {
 }
 
 .header .container {
-    display: flex;
-    align-items: center;
-    background-color: $absolut-white-header;
+ display: flex;
+ width: auto;
+  align-items: center;
+  background-color: $absolut-white-header;
+  justify-content: space-between;
 }

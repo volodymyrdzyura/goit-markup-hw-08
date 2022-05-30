@@ -1,117 +1,133 @@
 /*--Оформлення карточки твару--*/
 
 .project {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-bottom: -30px;
-    margin-left: -30px;
-    align-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: -30px;
+  margin-left: -30px;
+  align-items: center;
 
-&__item {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    & {
+      justify-content: left;
+    }
+  }
+
+  &__item {
     display: block;
-    width: 450px;
+    width: auto;
     margin-left: 0px;
     margin-bottom: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 480px) {
     &__item {
-        width: 354px;
-        margin: 15px;
-        
-    }}
+      width: 450px;
+      margin: 15px;
+    }
+  }
 
-    @media screen and (min-width: 1200px) {
-        &__item {
-            width: 370px;
-    }}
+  @media screen and (min-width: 768px) {
+    &__item {
+      width: 354px;
+      margin: 15px;
+    }
+  }
 
-&__side {
+  @media screen and (min-width: 768px) and (max-width: 1200px) {
+    &__item:first-child &__text {
+      padding-bottom: 56px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      width: 370px;
+    }
+  }
+
+  &__side {
     position: relative;
     overflow: hidden;
     transition: color 2250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
-&__image {
+  &__image {
     display: block;
-    width: 450px;
+    width: auto;
+  }
+
+  @media screen and (min-width: 480px) {
+    &__image {
+      width: 450px;
     }
+  }
 
-@media screen and (min-width: 768px) {
-    &__item {
-        width: 450px;
-        margin: 15px;
+  @media screen and (min-width: 768px) {
+    &__image {
+      width: 354px;
     }
-}
-@media screen and (min-width: 768px) {
-    &__item {
-        width: 354px;
-        margin: 15px;        
-    }}
+  }
 
-    @media screen and (min-width: 1200px) {
-        &__item {
-            width: 370px;
-    }}
+  @media screen and (min-width: 1200px) {
+    &__image {
+      width: 370px;
+    }
+  }
 
-
-
-&__name {
+  &__name {
     margin: 0px;
     font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
     text-align: left;
-}
+  }
 
-&__type {
+  &__type {
     padding: 4px 0px 0px 0px;
     color: $secondary-text-color;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.87;
     letter-spacing: 0.03em;
-}
+  }
 
-&__text {
-    /*width: 320px;*/
+  &__text {
     padding: 20px 24px;
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
-}
+  }
 
-&__image {
-    display: block;
-}
-
-&__item:hover .project__side .overlay {
+  &__item:hover .project__side .overlay {
     transform: translateY(0%);
-}
+  }
 
-&__item:hover, &__item:focus {
+  &__item:hover,
+  &__item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
+      1px 4px 6px rgba(0, 0, 0, 0.16);
     border-radius: 0px 0px 4px 4px;
-}}
+  }
+}
 
 /*----інший бік карточки ----*/
 
 .project__side .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 370px;
-    height: 294px;
-    color: $absolut-white-header;
-    background-color: rgba(33, 150, 243, 0.9);
-    transform: translateY(100%);
-    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: auto;
+  height: 294px;
+  color: $absolut-white-header;
+  background-color: rgba(33, 150, 243, 0.9);
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-&__text {
+  &__text {
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 63px;
@@ -120,4 +136,5 @@
     font-size: 18px;
     line-height: 28px;
     letter-spacing: 0.03em;
-}}
+  }
+}

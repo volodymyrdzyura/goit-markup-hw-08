@@ -84,6 +84,7 @@
 
 .menu-button .icon-close {
   display: block;
+  z-index: 1;
 }
 
 .menu-button.is-open .icon-menu {
@@ -106,7 +107,7 @@
 }
 
 .menu-button {
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 767px) {
     & {
       display: none;
     }
@@ -128,23 +129,10 @@ header {
     text-align: left;
     outline: solid 1px black;
 
-
     &.is-open {
         display: block;
     }
-}
-
-
-/*
-&__text {
-    color: #212121;
-        font-family: 'Roboto';
-            font-style: normal;
-            font-weight: 500;
-            font-size: 40px;
-            line-height: 47px;
-            letter-spacing: 0.02em;
-}*/
+  }
 
 .nav_contact {
   display: none;
@@ -156,3 +144,7 @@ header {
       justify-content: space-between;
   }
 }
+
+.menu-container.is-open .logo {
+      display: none;
+  }

@@ -27,15 +27,35 @@
     <!--Шапка сайту-->    
     <header class="header">
       <div class="container">
+        <a href="./index.html" class="logo"
+        ><span class="logo__web">Web</span>Studio</a >
+
+        <button type="menu-button" class="menu-button is-open" 
+        aria-expanded="false"
+        aria-controls="menu-container"
+        data-menu-button>
+        <svg
+          width="40"
+          height="40"
+        aria-label="перемикач мобільного меню">
+        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>           
+        </button>
+        <div class="menu-container" id="menu-container is-open" data-menu>
+                          
+            текст
+        </div>
+
+
+        <div class="nav_contact">
         <nav class="navigation">
-          <a href="./index.html" class="logo"
-            ><span class="logo__web">Web</span>Studio</a
-          >
           <ul class="navigation__list">
             <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__current">Студия</a></li>
             <li class="navigation__item"><a href="./portfolio.html" class="navigation__link">Портфолио</a></li>
             <li class="navigation__item"><a href=" " class="navigation__link">Контакты</a></li>
           </ul>
+          
         </nav>
         <ul class="contact-data">
           <li class="contact-data__item">
@@ -45,14 +65,16 @@
             </svg>info@devstudio.com</a>
           </li>
           <li class="contact-data__item">
-          <a href="tel:++380961111111" class="contact-data__link">
+          <a href="tel:+380961111111" class="contact-data__link">
             <svg class="contact-data__icon" width="10px" height="16px">
             <use href="./images/symbol-defs.svg#icon-telephone"></use>
             </svg>
-            +38 096 111 11 11</a
-            >
+            +38 096 111 11 11</a>
           </li>
         </ul>
+        </div>
+      </div>
+      
       </div>
     </header>
     
@@ -527,5 +549,6 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>

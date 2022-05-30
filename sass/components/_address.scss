@@ -7,7 +7,14 @@ address {
     
 &__location {
     margin-bottom: 9px;
+    text-align: center;
 }
+
+  @media screen and (min-width: 1200px) {
+    &__location {
+          text-align: left;
+      }
+  }
 
 &__location:last-child {
     margin-bottom: 0px;
@@ -29,3 +36,5 @@ address {
 [href*="https"] {
     color: $absolut-white-header;
 }
+
+

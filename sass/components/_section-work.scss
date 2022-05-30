@@ -3,7 +3,13 @@
 .section-work {
     padding-bottom: 94px;
     align-content: center;
+/*
 
+тут ми будемо приховувати контент*/
+    @media screen and (max-width: 1200px) {
+        &{
+display: none;         
+}}
 
 &__list {
     display: flex;

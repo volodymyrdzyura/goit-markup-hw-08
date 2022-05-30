@@ -15,12 +15,16 @@ body {
     display: block;
     border-bottom: 1px solid #ececec;
 }
+/*
+@media screen and (max-width: 486px) {
+    .header {
+        height: 60px;
 
-footer {
+    }
+  }*/
+
+  footer {
     padding: 60px 0px;
-}
-
-footer {
     background-color: $title-footer-dark;
 }
 
@@ -32,11 +36,27 @@ main {
 }
 
 .container {
-    width: 1200px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
+
+@media screen and (min-width: 480px) {
+    & {
+    width: 480px;       
+}}
+    
+@media screen and (min-width: 768px) {
+    & {
+    width: 768px;   
+   
+}}
+    
+@media screen and (min-width: 1200px) {
+    & {
+    width: 1200px;
+}}
 }
 
 li {

@@ -1,12 +1,32 @@
 /*--Наші переваги--*/
 .section-benefits {
-    padding: 94px 0px;
+    padding: 45px 0px;
     align-content: center;
 
+    @media screen and (min-width: 1200px) {
+        & {
+            padding: 94px 0px;
+        }
+    }
+
 &__list {
-    display: flex;
+    display: block;
     justify-content: center;
 }
+
+@media screen and (min-width: 768px) {
+    &__list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__list {
+        display: flex;
+    }
+  }
+
 
 &__title {
     margin-bottom: 10px;
@@ -26,13 +46,56 @@
 }
 
 &__item {
-    width: 270px;
-    margin-left: 30px;
+    width: 100%;
+    margin: 15px 0px;
 }
 
-&__item:first-child {
-    margin-left: 0px;
-}
+  @media screen and (min-width: 468px) {
+      &__item {
+        width: 450px;
+        margin:15px 0px 15px 0px;
+      }
+  }
+
+  @media screen and (min-width: 768px) {
+      &__item {
+          width: 354px;
+          margin: 15px;
+      }
+  }
+
+  @media screen and (min-width: 1200px) {
+      &__item {
+          width: 270px;
+          margin: 0px 15px;
+      }
+
+      &__item:first-child {
+          margin-left: 0px;
+      }
+
+      &__item:last-child {
+          margin-right: 0px;
+      }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 &__icon {
     width: 70px;
@@ -44,11 +107,34 @@
 
 &__box {
     display: flex;
-    width: 270px;
+    width: calc(100%-2*15px);
     height: 120px;
     background-color: $team-button-color;
     margin-bottom: 30px;
     border-radius: 4px;
     align-items: center;
     justify-content: center;
-}}
+}
+
+@media screen and (min-width: 468px) {
+    &__box {
+        width: 450px;
+        height: 120px;
+    }
+  }
+
+@media screen and (min-width: 768px) {
+    &__box {
+        width: 354px;
+        height: 120px;
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    &__box {
+        width: 270px;
+        height: 120px;
+    }
+  }
+}
+

@@ -4,14 +4,34 @@
     padding-top: 94px;
     padding-bottom: 94px;
 
-&_list {
+&__list {
     display: flex;
-    justify-content: center;
-    margin-bottom: 50px;
+    flex-wrap: wrap;
+    justify-content:flex-start;
+    margin-bottom: 35px;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-&_item:not(:last-child) {
+&__item {
+    margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
+    &__list {
+        justify-content: center;
+    }}
+
+  @media screen and (min-width: 1200px) {
+    &__list {
+        display: flex;
+        margin-bottom: 50px;
+    }
+  
+  &__item {
+        margin-bottom: 0px;
+    }}
+ 
+&__item:not(:last-child) {
     margin-right: 8px;
 }
 

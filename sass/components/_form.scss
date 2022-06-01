@@ -1,47 +1,44 @@
 /*-- Оформлення форми  --*/
 
 .form-title {
-    padding: 40px 40px 12px 40px;
-
-    margin: 0px;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 23px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: $primery-text-color;
+  padding: 40px 40px 12px 40px;
+  margin: 0px;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 23px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $primery-text-color;
 }
 
 @media screen and (min-width: 1200px) {
-    .form-title {
-       padding-bottom: 12px;
-      }
+  .form-title {
+    padding-bottom: 12px;
   }
-
+}
 
 .role-groupe {
-    display: block;
-    position: absolute;
-    top: 112px;
-    left: 40px;
-    width: 448px;
-    height: 342px;
+  display: block;
+  position: absolute;
+  top: 112px;
+  left: 40px;
+  width: 448px;
+  height: 342px;
 }
 
 @media screen and (min-width: 1200px) {
-    .role-groupe {
-        top: 75px;
-        width: 448px;
-    }
+  .role-groupe {
+    top: 75px;
+    width: 448px;
   }
+}
 
 .data-box {
-    position: relative;
-    margin-bottom: 10px;
-    height: 58px;
+  position: relative;
+  margin-bottom: 10px;
+  height: 58px;
 
-
-& input {
+  & input {
     box-sizing: border-box;
     width: 370px;
     height: 40px;
@@ -51,60 +48,59 @@
     margin-top: 4px;
     padding-left: 42px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+  }
 
   @media screen and (min-width: 1200px) {
     & input {
-        width: 448px;
-        height: 40px;
-      }
+      width: 448px;
+      height: 40px;
+    }
   }
 
-&-feed {
+  &-feed {
     position: relative;
     margin-bottom: 10px;
-}}
+  }
+}
 
 .data-field input {
-    position: relative;
+  position: relative;
 }
 
 .icon-box {
-    position: absolute;
-    left: 12px;
-    bottom: 11px;
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  position: absolute;
+  left: 12px;
+  bottom: 11px;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-
-input:hover+.icon-box,
-input:focus+.icon-box,
+input:hover + .icon-box,
+input:focus + .icon-box,
 .icon-box:hover {
-    fill: $hover-text-color;
+  fill: $hover-text-color;
 }
-
 
 .feedback {
-    box-sizing: border-box;
-    width: 370px;
-    height: 120px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    padding: 0px;
-    margin-top: 4px;
-    padding-left: 42px;
-    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    resize: none;
-    padding: 12px 16px;
+  box-sizing: border-box;
+  width: 370px;
+  height: 120px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  padding: 0px;
+  margin-top: 4px;
+  padding-left: 42px;
+  transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  resize: none;
+  padding: 12px 16px;
 
-    @media screen and (min-width: 1200px) {
-            &  {
-        width: 448px;
-        height: 120px;
-        }
+  @media screen and (min-width: 1200px) {
+    & {
+      width: 448px;
+      height: 120px;
     }
+  }
 
-&::placeholder {
+  &::placeholder {
     font-family: $standart;
     font-style: normal;
     font-weight: 400;
@@ -112,93 +108,95 @@ input:focus+.icon-box,
     line-height: 16px;
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
-}}
+  }
+}
 
 .data-box input:hover,
 .feedback:hover,
 .data-box input:focus,
 .feedback:focus {
-    border-color: $hover-text-color;
+  border-color: $hover-text-color;
 }
 
 .button-sub {
-    position: absolute;
-    top: 519px;
-    left: 125px;
-    min-width: 200px;
-    min-height: 50px;
-    padding: 10px 55px;
-    cursor: pointer;
-    background-color: $hover-text-color;
-    border-radius: 4px;
-    border: 1px solid rgba(33, 33, 33, 0.2);
+  position: absolute;
+  top: 519px;
+  left: 125px;
+  min-width: 200px;
+  min-height: 50px;
+  padding: 10px 55px;
+  cursor: pointer;
+  background-color: $hover-text-color;
+  border-radius: 4px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
 
-    @media screen and (min-width: 1200px) {
-        & {
-        top: 495px;
-        left: 165px;
-          }
-      }
+  @media screen and (min-width: 1200px) {
+    & {
+      top: 495px;
+      left: 165px;
+    }
+  }
 
-
-& p {
+  & p {
     color: $absolut-white-header;
     font-weight: 700;
     font-size: 16px;
     line-height: 30px;
     letter-spacing: 0.06em;
+  }
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 }
 
-&:hover, &:focus {
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-    1px 4px 6px rgba(0, 0, 0, 0.16);
-}}
-
 .agreement {
-    display: block;
-    position: absolute;
-    bottom: 120px;
-    left: 52px;
-    width: auto;
-    align-items: center;
-    align-content: center;
-    margin-top: 10px;
+  display: block;
+  position: absolute;
+  bottom: 120px;
+  left: 52px;
+  width: auto;
+  align-items: center;
+  align-content: center;
+  margin-top: 10px;
 
-&__text {
+  &__text {
     display: inline-block;
     font-weight: 400;
     font-size: 12px;
     line-height: 24px;
     letter-spacing: 0.03em;
     color: $secondary-text-color;
-}
+  }
 
-    @media screen and (min-width: 1200px) {
-            &__text  {
-        font-size: 14px;
-        }
+  @media screen and (min-width: 1200px) {
+    &__text {
+      font-size: 14px;
     }
+  }
 
-&__down {
+  &__down {
     text-decoration: underline;
     color: $hover-text-color;
-}
+  }
 
-&__checkbox {
+  &__checkbox {
     appearance: none;
     position: absolute;
     margin: 0px;
-}
-&__checkbox:checked+&__icon {
+  }
+  &__checkbox:checked + &__icon {
     display: inline-block;
     background-color: $hover-text-color;
     background-image: url(../images/icon_check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: $hover-text-color;
-}
+  }
 
-&__icon {
+  &__icon {
     display: inline-block;
     box-sizing: border-box;
     margin: 0px;
@@ -208,37 +206,39 @@ input:focus+.icon-box,
     border-radius: 4px;
     border: solid 1px $primery-text-color;
     vertical-align: middle;
-}}
+  }
+}
 
 /*--Оформлення круглої кнопки виходу --*/
 .round-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 8px;
-    right: 8px;
-    padding: 0px;
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    border: solid 1px rgba(0, 0, 0, 0.1);
-    background-color: #ffffff;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  padding: 0px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: solid 1px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  cursor: pointer;
 
-&_icon {
+  &_icon {
     background-repeat: no-repeat;
     background-size: contain;
     fill: #757575;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  &:hover &_icon {
+    fill: $hover-text-color;
+  }
 }
 
-&:hover &_icon {
-    fill: $hover-text-color;
-}}
-
 .client-data {
-    display: block;
-color: $form_text;
-font-size: 12px;
+  display: block;
+  color: $form_text;
+  font-size: 12px;
 }

@@ -1,0 +1,176 @@
+header {
+  position: relative;
+}
+
+.menu-container {
+  display: none;
+  position: fixed;
+  top:0px;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: $absolut-white-header;
+  text-align: left;
+  outline: solid 1px black;
+  padding: 48px 40px;
+  z-index: 1 ;
+  border-bottom: none;
+  
+  &.is-open {
+      display: flex;
+      max-width: 100%;
+      flex-direction: column;
+      flex-wrap: wrap;
+      height: auto;
+  }
+
+  .menu-container::backdrop {
+    background: rgba(255, 0, 0, 0.25);
+  }
+
+
+  &.is-open .navigation__current::after {
+  display: none;
+}
+
+@media screen and (min-width: 767px) {
+  &.is-open {
+      display: none;
+  }}
+}
+
+.nav_contact {
+display: none;
+}
+
+@media screen and (min-width: 767px) {
+.nav_contact {
+    display: flex;
+    justify-content: space-between;
+}
+}
+.navigation__list-mob
+{
+  margin-bottom: 200px;
+}
+
+
+.navigation__link-mob {
+  display: block;
+  text-align: left;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: black;
+}
+
+.navigation__item-mob :hover {
+  color: $hover-text-color;
+}
+
+.navigation__item-mob {
+  padding-bottom: 32px;
+}
+
+.navigation__item-mob:last-child {
+  padding-bottom: 0px;
+}
+
+/* модуль: телефон-пошта */
+.contact-data-mob {
+  margin-bottom: 64px;
+}
+.contact-data__item-mob:not(:last-child) {
+  margin-bottom: 32px;
+}
+
+.contact-data__link-tel {
+  font-weight: 500;
+  font-size: 34px;
+  line-height: 40px;
+  letter-spacing: 0.02em;
+  color: $hover-text-color;
+}
+
+.contact-data__link-mail {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.02em;
+  color: $secondary-text-color;
+}
+
+/* посилання на соціальні мережі */
+
+.contact-datasocial {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-datasocial__link-mob {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: $hover-text-color;
+  padding-right: 10px;
+  padding-left: 10px;
+}
+
+.contact-datasocial__item-mob:not(:last-child) .contact-datasocial__link-mob{
+  border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.navigation__link-mob.navigation__current {
+  color: $hover-text-color;
+}
+
+.menu-button {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  border: none;
+  background-color: $absolut-white-header;
+  padding: 0px;
+  z-index: 2;
+}
+
+.menu-button.is-open .icon-close {
+  display: none;
+  position: fixed;
+}
+
+.menu-button .icon-close {
+  display: block;
+  z-index: 2;
+}
+
+.menu-button.is-open .icon-menu {
+  display: block;
+}
+
+.menu-button .icon-menu {
+  display: none;
+}
+
+.menu-button:hover,
+.menu-button:focus {
+  fill: #2196f3;
+}
+
+@media screen and (max-width: 767px) {
+  & {
+    display: none;
+  }
+}
+
+.menu-button {
+  @media screen and (min-width: 767px) {
+    & {
+      display: none;
+    }
+  }
+}
+
+

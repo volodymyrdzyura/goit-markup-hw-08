@@ -4,9 +4,8 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin-bottom: -30px;
-  margin-left: -30px;
-  align-items: center;
+ /* align-items: center;*/
+  gap: 30px;
 
   @media screen and (min-width: 768px) and (max-width: 1200px) {
     & {
@@ -15,30 +14,22 @@
   }
 
   &__item {
-    display: block;
+    display: flex;
     width: auto;
-    margin-left: 0px;
-    margin-bottom: 30px;
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
   }
 
   @media screen and (min-width: 480px) {
     &__item {
       width: 450px;
-      margin: 15px;
+      
     }
   }
 
   @media screen and (min-width: 768px) {
     &__item {
       width: 354px;
-      margin: 15px;
-    }
-  }
-
-  @media screen and (min-width: 768px) and (max-width: 1200px) {
-    &__item:first-child &__text {
-      padding-bottom: 56px;
+     
     }
   }
 
@@ -47,7 +38,14 @@
       width: 370px;
     }
   }
-
+    
+  &__link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+  }
+  
+  
   &__side {
     position: relative;
     overflow: hidden;
@@ -56,7 +54,7 @@
 
   &__image {
     display: block;
-    width: auto;
+    max-width: 100%;
   }
 
   @media screen and (min-width: 480px) {
@@ -87,7 +85,7 @@
   }
 
   &__type {
-    padding: 4px 0px 0px 0px;
+    padding-top: 4px;
     color: $secondary-text-color;
     font-weight: 400;
     font-size: 16px;
@@ -100,6 +98,7 @@
     border-left: 1px solid #eee;
     border-right: 1px solid #eee;
     border-bottom: 1px solid #eee;
+    flex-grow: 1;    
   }
 
   &__item:hover .project__side .overlay {
@@ -124,10 +123,11 @@
   height: 294px;
   color: $absolut-white-header;
   background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
+  transform: translateY(102%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
+  
   &__text {
+
     padding-left: 24px;
     padding-right: 24px;
     padding-top: 63px;

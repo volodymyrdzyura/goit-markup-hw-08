@@ -24,7 +24,16 @@
     line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
+    text-align: center;
   }
+
+  @media screen and (min-width: 780px) {
+    &__title {
+      text-align: left;
+    }
+  }
+
+
 
   &__text {
     color: $secondary-text-color;

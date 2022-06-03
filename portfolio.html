@@ -24,61 +24,11 @@
         <a href="./index.html" class="logo"
         ><span class="logo__web">Web</span>Studio</a >
 
-
-        <button type="menu-button" class="menu-button is-open" 
-        aria-expanded="false"
-        aria-controls="menu-container"
-        data-menu-button>
-        <svg
-          width="40"
-          height="40"
-        aria-label="перемикач мобільного меню">
-        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
-        <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
-        </svg>           
-        </button>
-        <div class="menu-container" id="menu-container is-open" data-menu>
-                          
-                  <div class="nav_contact-mob">
-            <ul class="navigation__list-mob">
-              <li class="navigation__item-mob"><a href="./index.html" class="navigation__link-mob ">Студия</a></li>
-              <li class="navigation__item-mob"><a href="./portfolio.html" class="navigation__link-mob navigation__current">Портфолио</a></li>
-              <li class="navigation__item-mob"><a href=" " class="navigation__link-mob">Контакты</a></li>
-            </ul>
-            <ul class="contact-data-mob">
-              <li class="contact-data__item-mob">
-                <a href="tel:+380961111111" class="contact-data__link-tel">
-                  +38 096 111 11 11</a>
-              </li>
-              <li class="contact-data__item-mob">
-                <a href="mailto:info@devstudio.com" class="contact-data__link-mail">
-                  info@devstudio.com</a>
-              </li>
-            </ul>
-
-            <ul class="contact-datasocial">
-              <li class="contact-datasocial__item-mob">
-                <a href="Instagram" class="contact-datasocial__link-mob">
-                  Instagram</a>
-              </li>
-              <li class="contact-datasocial__item-mob">
-                <a href="Twitter" class="contact-datasocial__link-mob">
-                  Twitter</a>
-              </li>
-              <li class="contact-datasocial__item-mob">
-                <a href="Facebook" class="contact-datasocial__link-mob">
-                  Facebook</a>
-              </li>
-              <li class="contact-datasocial__item-mob">
-                <a href="LinkedIn" class="contact-datasocial__link-mob">
-                  LinkedIn</a>
-              </li>
-            </ul>
-
-          </div>
-        </div>
-
-
+      <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
+        <svg width="40" height="40" aria-label="перемикач мобільного меню">
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+        </svg>
+      </button>
         <div class="nav_contact">
         <nav class="navigation">
           <ul class="navigation__list">
@@ -130,12 +80,32 @@
                       получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>
-                  <img class="project__image"
-                     src="./images/laptop.jpg"
-                     alt="ноутбук"
-                     width="370"
-                     height="294"
-                   />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/tehnokrjak-mobile.jpg    1x,
+                        ./images/tehnokrjak-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnokrjak-tablet.jpg    1x,
+                        ./images/tehnokrjak-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/tehnokrjak.jpg    1x,
+                        ./images/tehnokrjak@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img src="./images/tehnokrjak.jpg" alt="Веб-сайт" />
+                  </picture>
+
                  </div>
               <div class="project__text">
                 <h2 class="project__name">Технокряк</h2>
@@ -152,7 +122,31 @@
                       получить исчерпывающие сведения о компании или частном лице.
                     </p>
                   </div>    
-                <img class="project__image" src="./images/people.jpg" alt="баскетболісти" width="370" height="294" />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/poster-mobile.jpg    1x,
+                        ./images/poster-mobile@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/poster-tablet.jpg    1x,
+                        ./images/poster-tablet@2x.jpg 2x
+                      "
+                      media="(max-width: 1199px)"
+                    />
+                    <source
+                      srcset="./images/poster.jpg 1x, ./images/poster@2x.jpg 2x"
+                      media="(min-width: 1200px)"
+                    />
+
+                    <img
+                      src="./images/poster.jpg"
+                      alt="Постер New Orlean vs Golden Star"
+                    />
+                  </picture>
               </div>
                 <div class="project__text">
                 <h2 class="project__name">Постер New Orlean vs Golden Star</h2>
@@ -169,12 +163,31 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/name.jpg"
-                alt="назва"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/seafood-mobile.jpg    1x,
+                      ./images/seafood-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/seafood-tablet.jpg    1x,
+                      ./images/seafood-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/seafood.jpg    1x,
+                      ./images/seafood@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/seafood.jpg" alt="Ресторан Seafood" />
+                </picture>
               </div>
               <div class="project__text">
                 <h2 class="project__name">Ресторан Seafood</h2>
@@ -191,12 +204,29 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/headers.jpg"
-                alt="навушники"
-                width="370"
-                height="294"
-              /></div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/prime-mobile.jpg    1x,
+                      ./images/prime-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/prime-tablet.jpg    1x,
+                      ./images/prime-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./images/prime.jpg 1x, ./images/prime@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/prime.jpg" alt="Проект Prime" />
+                </picture>
+            </div>
               <div class="project__text">
                 <h2 class="project__name">Проект Prime</h2>
                 <p class="project__type">Маркетинг</p>
@@ -212,12 +242,29 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/boxes.jpg"
-                alt="коробки"
-                width="370"
-                height="294"
-              /></div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/boxes-mobile.jpg    1x,
+                      ./images/boxes-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/boxes-tablet.jpg    1x,
+                      ./images/boxes-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./images/boxes.jpg 1x, ./images/boxes@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/boxes.jpg" alt="Проект Boxes" />
+                </picture>
+            </div>
               <div class="project__text">
                 <h2 class="project__name">Проект Boxes</h2>
                 <p class="project__type">Приложение</p>
@@ -234,12 +281,34 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/screen.jpg"
-                alt="монітор"
-                width="370"
-                height="294"
-              />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/inspiration-mobile.jpg    1x,
+                      ./images/inspiration-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/inspiration-tablet.jpg    1x,
+                      ./images/inspiration-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/inspiration.jpg    1x,
+                      ./images/inspiration@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/inspiration.jpg"
+                    alt="Inspiration has no Borders"
+                  />
+                </picture>
               </div>
               <div class="project__text">
                 <h2 class="project__name" lang="eng">
@@ -258,12 +327,35 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/book.jpg"
-                alt="книжка"
-                width="370"
-                height="294"
-              /></div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/limited-mobile.jpg    1x,
+                      ./images/limited-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/limited-tablet.jpg    1x,
+                      ./images/limited-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/limited.jpg    1x,
+                      ./images/limited@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img
+                    src="./images/limited.jpg"
+                    alt="Издание Limited Edition"
+                  />
+                </picture>
+            </div>
               <div class="project__text">
                 <h2 class="project__name">Издание Limited Edition</h2>
                 <p class="project__type">Дизайн</p>
@@ -279,12 +371,29 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/label.jpg"
-                alt="емблема"
-                width="370"
-                height="294"
-              /></div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/lab-mobile.jpg    1x,
+                      ./images/lab-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/lab-tablet.jpg    1x,
+                      ./images/lab-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="./images/lab.jpg 1x, ./images/lab@2x.jpg 2x"
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/lab.jpg" alt="Проект LAB" />
+                </picture>
+            </div>
               <div class="project__text">
                 <h2 class="project__name">Проект LAB</h2>
                 <p class="project__type">Маркетинг</p>
@@ -300,9 +409,32 @@
                     получить исчерпывающие сведения о компании или частном лице.
                   </p>
                 </div>
-              <img class="project__image"
-                src="./images/hands.jpg" alt="руки на науті" width="370px" height="294px"
-              /></div>
+                <picture>
+                  <source
+                    srcset="
+                      ./images/business-mobile.jpg    1x,
+                      ./images/business-mobile@2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/business-tablet.jpg    1x,
+                      ./images/business-tablet@2x.jpg 2x
+                    "
+                    media="(max-width: 1199px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/business.jpg    1x,
+                      ./images/business@2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+
+                  <img src="./images/business.jpg" alt="Growing Business" />
+                </picture>
+            </div>
               <div class="project__text">
                 <h2 class="project__name" lang="eng">Growing Business</h2>
                 <p class="project__type">Приложение</p>
@@ -385,8 +517,58 @@
           </div>
         </div>
       </section>
-      <script src="./js/modal.js"></script>
-      <script src="./js/menu.js"></script>
+
+  <!--мобільне меню -->
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+      <svg width="40" height="40" aria-label="перемикач мобільного меню">
+        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <div class="nav__contact-mob">
+      <ul class="navigation__list-mob">
+        <li class="navigation__item-mob"><a href="./index.html"
+            class="navigation__link-mob ">Студия</a>
+        </li>
+        <li class="navigation__item-mob"><a href="./portfolio.html" class="navigation__link-mob navigation__current">Портфолио</a></li>
+        <li class="navigation__item-mob"><a href=" " class="navigation__link-mob">Контакты</a></li>
+      </ul>
+      <ul class="contact-data-mob">
+        <li class="contact-data__item-mob">
+          <a href="tel:+380961111111" class="contact-data__link-tel">
+            +38 096 111 11 11</a>
+        </li>
+        <li class="contact-data__item-mob">
+          <a href="mailto:info@devstudio.com" class="contact-data__link-mail">
+            info@devstudio.com</a>
+        </li>
+      </ul>
+      <ul class="contact-datasocial">
+        <li class="contact-datasocial__item-mob">
+          <a href="Instagram" class="contact-datasocial__link-mob">
+            Instagram</a>
+        </li>
+        <li class="contact-datasocial__item-mob">
+          <a href="Twitter" class="contact-datasocial__link-mob">
+            Twitter</a>
+        </li>
+        <li class="contact-datasocial__item-mob">
+          <a href="Facebook" class="contact-datasocial__link-mob">
+            Facebook</a>
+        </li>
+        <li class="contact-datasocial__item-mob">
+          <a href="LinkedIn" class="contact-datasocial__link-mob">
+            LinkedIn</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <script src="./js/modal.js"></script>
+  <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+    integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+    crossorigin="anonymous"></script>
+  <script defer src="js/mobile-menu.js"></script>
     </footer>
   </body>
 </html>

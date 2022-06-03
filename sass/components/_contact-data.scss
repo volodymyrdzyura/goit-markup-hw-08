@@ -1,14 +1,14 @@
 /*--Оформлення контактів--*/
 
 .contact-data {
-  display: flex;
-
+  
   @media screen and (min-width: 768px) {
     & {
       display: block;
       margin-left: 84px;
-      padding-top: 21px;
-      }
+      margin-top: auto;
+      margin-bottom: auto;
+    }
 
     &__item:nth-child(1) {
       margin-bottom: 10px;
@@ -19,9 +19,9 @@
     & {
       display: flex;
       margin-left: 305px;
-      margin-bottom: 0px;
-      padding-top: 0px;
+
     }
+
     &__item:nth-child(1) {
       margin-bottom: 0px;
     }
@@ -65,14 +65,14 @@
     color: #2196f3;
   }
 
-& :last-child,
-.images :last-child {
-    margin-right: 0px;
-}
-
-  &:last-child {
+  & :last-child,
+  .images :last-child {
     margin-right: 0px;
   }
+  /*
+  &:last-child {
+    margin-right: 0px;
+  }*/
 }
 
 .contact .container {
@@ -81,41 +81,42 @@
   margin-right: auto;
   justify-content: center;
 
-@media screen and (min-width: 768px) {
+  @media screen and (min-width: 768px) {
     & {
-        display: flex;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: auto;
+      margin-right: auto;
+      justify-content: center;
     }
-}
+  }
 
-@media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     & {
-        display: flex;
+      display: flex;
     }
-}}
+  }
+}
 
 .contact-links {
   margin-top: 20px;
 }
 
 @media screen and (min-width: 768px) {
-    .social {
-        margin-left: 165px;
-        padding-top: 0px;
-    }
-    
-    .location {
-        padding-left: 76px;
-    }
+  .social {
+    margin-left: 165px;
+    padding-top: 0px;
+  }
+
+  .location {
+    padding-left: 76px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .social {
-        margin-left: 70px;
-    }
+  .social {
+    margin-left: 70px;
+  }
 }
 
 .link-current {

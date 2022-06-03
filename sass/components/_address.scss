@@ -10,6 +10,11 @@ address {
     text-align: center;
 }
 
+&__contact:hover,
+&__contact:focus {
+    color: $hover-text-color;
+}
+
   @media screen and (min-width: 1200px) {
     &__location {
           text-align: left;

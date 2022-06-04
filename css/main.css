@@ -1361,7 +1361,7 @@ address {
   width: 450px;
   height: 609px;
   top: 50%;
-  left: 50%;
+  left: -50%;
   background: #ffffff;
   -webkit-box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
           box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -1740,15 +1740,6 @@ input:focus + .icon-box,
   background-color: #2196f3;
 }
 
-.social-gray {
-  /*
-  @media screen and (min-width: 480px) {
-    &__list {
-      display: flex;
-    }
-  }*/
-}
-
 .social-gray__list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1944,7 +1935,7 @@ input:focus + .icon-box,
   border-right: 1px solid rgba(33, 33, 33, 0.2);
 }
 
-.contact-mob__social-item.navigation__current {
+.navigation__link-mob.navigation__current {
   color: #2196f3;
 }
 

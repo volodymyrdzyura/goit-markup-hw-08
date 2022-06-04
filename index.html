@@ -24,7 +24,7 @@
 
       <button class="menu-toggle js-open-menu" aria-expanded="false" aria-controls="mobile-menu">
         <svg width="40" height="40" aria-label="перемикач мобільного меню">
-         <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
+          <use class="icon-menu" href="./images/symbol-defs.svg#icon-menu_40px"></use>
         </svg>
       </button>
 
@@ -490,116 +490,115 @@
 
 
   <!--мобільне меню -->
-      <div class="menu-container js-menu-container" id="mobile-menu">
-        <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
-          <svg width="40" height="40" aria-label="перемикач мобільного меню">
-          <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+  <div class="menu-container js-menu-container" id="mobile-menu">
+    <button class="menu-toggle js-close-menu" aria-expanded="false" aria-controls="mobile-menu" data-menu-button>
+      <svg width="40" height="40" aria-label="перемикач мобільного меню">
+        <use class="icon-close" href="./images/symbol-defs.svg#icon-close_40px"></use>
+      </svg>
+    </button>
+    <div class="contact-mob">
+
+      <ul class="contact-mob__list-links">
+        <li class="navigation__item-mob"><a href="./index.html"
+            class="navigation__link-mob navigation__current">Студия</a>
+        </li>
+        <li class="navigation__item-mob"><a href="./portfolio.html" class="navigation__link-mob">Портфолио</a></li>
+        <li class="navigation__item-mob"><a href=" " class="navigation__link-mob">Контакты</a></li>
+      </ul>
+      <div>
+        <ul class="contact-mob-data">
+          <li class="contact-mob__item">
+            <a href="tel:+380961111111" class="contact-mob__link-tel">
+              +38 096 111 11 11</a>
+          </li>
+          <li class="contact-mob__item">
+            <a href="mailto:info@devstudio.com" class="contact-mob__link-mail">
+              info@devstudio.com</a>
+          </li>
+        </ul>
+
+        <ul class="contact-mob__social">
+          <li class="contact-mob__social-item">
+            <a href="Instagram" class="contact-mob__social__link">
+              Instagram</a>
+          </li>
+          <li class="contact-mob__social-item">
+            <a href="Twitter" class="contact-mob__social__link">
+              Twitter</a>
+          </li>
+          <li class="contact-mob__social-item">
+            <a href="Facebook" class="contact-mob__social__link">
+              Facebook</a>
+          </li>
+          <li class="contact-mob__social-item">
+            <a href="LinkedIn" class="contact-mob__social__link">
+              LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!--backdrop-->
+
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button data-modal-close class="round-button">
+          <svg class="round-button_icon" width="11px" height="11px">
+            <use href="./images/symbol-defs.svg#icon-cross"></use>
           </svg>
         </button>
-         <div class="contact-mob">
-           
-          <ul class="contact-mob__list-links">
-      <li class="navigation__item-mob"><a href="./index.html" class="navigation__link-mob navigation__current">Студия</a>
-      </li>
-      <li class="navigation__item-mob"><a href="./portfolio.html" class="navigation__link-mob">Портфолио</a></li>
-      <li class="navigation__item-mob"><a href=" " class="navigation__link-mob">Контакты</a></li>
-          </ul>
+        <!--form-->
+        <form class="js-client-data" autocomplete="off">
           <div>
-          <ul class="contact-mob-data">
-      <li class="contact-mob__item">
-        <a href="tel:+380961111111" class="contact-mob__link-tel">
-          +38 096 111 11 11</a>
-      </li>
-      <li class="contact-mob__item">
-        <a href="mailto:info@devstudio.com" class="contact-mob__link-mail">
-          info@devstudio.com</a>
-      </li>
-          </ul>
-          
-          <ul class="contact-mob__social">
-      <li class="contact-mob__social-item">
-        <a href="Instagram" class="contact-mob__social__link">
-          Instagram</a>
-      </li>
-      <li class="contact-mob__social-item">
-        <a href="Twitter" class="contact-mob__social__link">
-          Twitter</a>
-      </li>
-      <li class="contact-mob__social-item">
-        <a href="Facebook" class="contact-mob__social__link">
-          Facebook</a>
-      </li>
-      <li class="contact-mob__social-item">
-        <a href="LinkedIn" class="contact-mob__social__link">
-          LinkedIn</a>
-      </li>
-          </ul>
+            <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
           </div>
-
-
+          <div class="role-groupe" role="groupe">
+            <div class="data-box">
+              <label class="client-data" for="name">Имя</label autocomplete="on">
+              <input class:="data-field" type="text" name="name" id="name" />
+              <svg class="icon-box" width="11px" height="11px">
+                <use href="./images/symbol-defs.svg#icon-man"></use>
+              </svg>
+            </div>
+            <div class="data-box">
+              <label class="client-data" for="phone-number">Телефон</label>
+              <input class:="data-field" type="tel" name="name" id="phone-number" />
+              <svg class="icon-box" width="13px" height="13px">
+                <use href="./images/symbol-defs.svg#icon-phone_tube"></use>
+              </svg>
+            </div>
+            <div class="data-box">
+              <label class="client-data" for="e-mail">Почта</label>
+              <input class:="data-field" type="email" name="name" id="e-mail" />
+              <svg class="icon-box" width="15px" height="12px">
+                <use href="./images/symbol-defs.svg#icon-letter"></use>
+              </svg>
+            </div>
+            <div class="data-box-feed">
+              <label class="client-data" for="comment">Комментарий</label>
+              <textarea name="feedback" rows="5" class="feedback" id="comment" placeholder="Введите текст"></textarea>
+            </div>
+          </div>
+          <div class="agreement">
+            <label>
+              <input class="agreement__checkbox" type="checkbox" name="" value="checkbox-box" />
+              <span class="agreement__icon"></span>
+              <p class="agreement__text">Соглашаюсь с рассылкой и принимаю <span><a class="agreement__down"
+                    href="./portfolio.html">Условия договора</a></span>
+              </p>
+            </label>
+          </div>
+          <button class="button-sub" type="submit">
+            <p>Отправить</p>
+          </button>
+        </form>
       </div>
- 
-  <!--backdrop-->
-
-  <div class="backdrop is-hidden" data-modal>
-    <div class="modal">
-      <button data-modal-close class="round-button">
-        <svg class="round-button_icon" width="11px" height="11px">
-          <use href="./images/symbol-defs.svg#icon-cross"></use>
-        </svg>
-      </button>
-      
-      <!--form-->
-      <form class="js-client-data" autocomplete="off">
-        <div>
-          <h2 class="form-title">Оставьте свои данные, мы вам перезвоним</h2>
-        </div>
-        <div class="role-groupe" role="groupe">
-          <div class="data-box">
-            <label class="client-data" for="name">Имя</label autocomplete="on">
-            <input class:="data-field" type="text" name="name" id="name" />
-            <svg class="icon-box" width="11px" height="11px">
-              <use href="./images/symbol-defs.svg#icon-man"></use>
-            </svg>
-          </div>
-          <div class="data-box">
-            <label class="client-data" for="phone-number">Телефон</label>
-            <input class:="data-field" type="tel" name="name" id="phone-number" />
-            <svg class="icon-box" width="13px" height="13px">
-              <use href="./images/symbol-defs.svg#icon-phone_tube"></use>
-            </svg>
-          </div>
-          <div class="data-box">
-            <label class="client-data" for="e-mail">Почта</label>
-            <input class:="data-field" type="email" name="name" id="e-mail" />
-            <svg class="icon-box" width="15px" height="12px">
-              <use href="./images/symbol-defs.svg#icon-letter"></use>
-            </svg>
-          </div>
-          <div class="data-box-feed">
-            <label class="client-data" for="comment">Комментарий</label>
-            <textarea name="feedback" rows="5" class="feedback" id="comment" placeholder="Введите текст"></textarea>
-          </div>
-        </div>
-        <div class="agreement">
-          <label>
-            <input class="agreement__checkbox" type="checkbox" name="" value="checkbox-box" />
-            <span class="agreement__icon"></span>
-            <p class="agreement__text">Соглашаюсь с рассылкой и принимаю <span><a class="agreement__down"
-                  href="./portfolio.html">Условия договора</a></span>
-            </p>
-          </label>
-        </div>
-        <button class="button-sub" type="submit">
-          <p>Отправить</p>
-        </button>
-      </form>
     </div>
-  </div>
-  <script src="./js/modal.js"></script>
+    <script src="./js/modal.js"></script>
+
     <script defer src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
       integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
       crossorigin="anonymous"></script>
-    <script defer src="js/mobile-menu.js"></script>
+    <script defer src="./js/mobile-menu.js"></script>
 </body>
 </html>

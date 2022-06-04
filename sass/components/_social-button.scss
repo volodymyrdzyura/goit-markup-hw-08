@@ -63,12 +63,6 @@
     justify-content: center;
     align-items: center;
   }
-/*
-  @media screen and (min-width: 480px) {
-    &__list {
-      display: flex;
-    }
-  }*/
 
   &__item {
     margin-right: 10px;
@@ -103,10 +97,6 @@
   border: none;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-
-
-
-
 
 .social-gray__item:last-child,
 .social__list:last-child {

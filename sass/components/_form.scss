@@ -246,7 +246,7 @@ input:focus + .icon-box,
   &__checkbox:checked + &__icon {
     display: inline-block;
     background-color: $hover-text-color;
-    background-image: url(../images/icon_check.svg);
+    background-image: url(/images/icon_check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: $hover-text-color;

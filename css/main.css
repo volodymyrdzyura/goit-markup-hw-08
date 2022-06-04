@@ -1678,7 +1678,7 @@ input:focus + .icon-box,
 .agreement__checkbox:checked + .agreement__icon {
   display: inline-block;
   background-color: #2196f3;
-  background-image: url(../images/icon_check.svg);
+  background-image: url(/images/icon_check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;

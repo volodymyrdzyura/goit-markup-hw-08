@@ -14,7 +14,6 @@ body {
 
 .header {
   position: relative;
-  display: block;
   border-bottom: 1px solid #ececec;
 }
 
@@ -31,11 +30,16 @@ main {
 }
 
 .container {
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    max-width: 100%;
+  }
 }
 
 @media screen and (min-width: 480px) {
@@ -76,23 +80,20 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
 }
 
 @media screen and (min-width: 768px) {
   .header .container {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
   }
 }
 
-*
-img {
+* img {
   display: block;
   max-width: 100%;
   height: auto;
@@ -577,7 +578,7 @@ img {
 /*--Оформлення карточки твару--*/
 /*--Наші переваги--*/
 .section-benefits {
-  padding: 45px 0px;
+  padding: 60px 0px;
   -ms-flex-line-pack: center;
       align-content: center;
 }
@@ -696,8 +697,15 @@ img {
 /*--Наші переваги--*/
 /*-- кнопки фільтра  --*/
 .filters {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 1200px) {
+  .filters {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 }
 
 .filters__list {
@@ -709,13 +717,9 @@ img {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  margin-bottom: 35px;
+  margin-bottom: 25px;
   -webkit-transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.filters__item {
-  margin-bottom: 15px;
 }
 
 @media screen and (min-width: 768px) {
@@ -723,16 +727,21 @@ img {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-bottom: 30px;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .filters__list {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
     margin-bottom: 50px;
   }
+}
+
+.filters__item {
+  margin-bottom: 15px;
+}
+
+@media screen and (min-width: 768px) {
   .filters__item {
     margin-bottom: 0px;
   }
@@ -848,7 +857,6 @@ footer .logo {
 
 @media screen and (max-width: 767px) {
   .section-hero {
-    margin-top: 60px;
     background-image: -webkit-gradient(linear, left top, right top, color-stop(50%, rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/hero-bg-mobile-min.jpg);
     background-image: linear-gradient(90deg, rgba(47, 48, 58, 0.4) 50%, rgba(47, 48, 58, 0.4) 100%), url(../images/hero-bg-mobile-min.jpg);
   }
@@ -1894,8 +1902,8 @@ input:focus + .icon-box,
   height: 100vh;
   background-color: #ffffff;
   border-bottom: none;
-  -webkit-transform: translateX(100%);
-          transform: translateX(100%);
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%);
   -webkit-transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -12,7 +12,6 @@ body {
 
 .header {
   position: relative;
-  display: block;
   border-bottom: 1px solid #ececec;
 }
 
@@ -29,11 +28,16 @@ main {
 }
 
 .container {
-  max-width: 100%;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+
+  @media screen and (max-width: 480px) {
+    & {
+      max-width: 100%;
+    }
+  }
 
   @media screen and (min-width: 480px) {
     & {
@@ -71,21 +75,18 @@ a {
 }
 
 .header .container {
- display: flex;
- width: auto;
+  display: flex;
   align-items: center;
-  background-color: $absolut-white-header;
+  }
+
+@media screen and (min-width: 768px) {
+  .header .container {
+    justify-content: left;
+  }
 }
 
-    @media screen and (min-width: 768px) {
-      .header .container {
-        justify-content: center;;
-      }
-    }
-
- *
-   img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+* img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}

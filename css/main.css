@@ -1419,7 +1419,6 @@ address {
   display: block;
   width: auto;
   height: 342px;
-  margin-left: 15px;
 }
 
 @media screen and (min-width: 480px) {

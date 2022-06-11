@@ -18,28 +18,17 @@
 }
 
 .role-groupe {
-  display: block;
   width: auto;
   height: 342px;
+  left: 40px;
+  top: 112px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 480px) {
   .role-groupe {
     position: absolute;
-    top: 112px;
-    left: 40px;
-    width: auto;
-    height: 342px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .role-groupe {
-    position: absolute;
-    top: 112px;
-    left: 40px;
-    width: auto;
-    height: 342px;
+    margin-left: 0px;
   }
 }
 
@@ -244,7 +233,7 @@ input:focus + .icon-box,
   &__checkbox:checked + &__icon {
     display: inline-block;
     background-color: $hover-text-color;
-    background-image: url(/images/icon_check.svg);
+    background-image: url(../images/icon_check.svg);
     background-size: contain;
     background-origin: border-box;
     border-color: $hover-text-color;

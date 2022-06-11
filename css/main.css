@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/*--кольори проекту--*/
 ::after,
 ::before {
   -webkit-box-sizing: border-box;
@@ -100,7 +101,7 @@ a {
   height: auto;
 }
 
-/* базові елементи */
+/*--базові елементи--*/
 /*оформлення тексту навігаційних кнопок*/
 .navigation {
   display: -webkit-box;
@@ -195,7 +196,7 @@ a {
   }
 }
 
-/*оформлення тексту навігаційних кнопок*/
+/*--оформлення тексту навігаційних кнопок--*/
 /*--Оформлення контактів--*/
 .contact-data {
   /*
@@ -412,7 +413,7 @@ a {
   color: #ffffff;
 }
 
-/* Секція що ми робимо */
+/*--Секція що ми робимо--*/
 /*--Оформлення карточки твару--*/
 .project {
   display: -webkit-box;
@@ -1063,7 +1064,7 @@ footer .logo {
   }
 }
 
-/* Наша команда */
+/*--Наша команда--*/
 /*--Оформлення адресів у футері --*/
 address {
   margin-top: 20px;
@@ -1217,7 +1218,7 @@ address {
   border-color: #2196f3;
 }
 
-/* Our partners */
+/*--Our partners--*/
 /*--підписатись на розсилку--*/
 .section-signup {
   display: block;
@@ -1396,7 +1397,7 @@ address {
   }
 }
 
-/* Backdrop */
+/*--Backdrop--*/
 /*-- Оформлення форми  --*/
 .form-title {
   padding: 40px 40px 12px 40px;
@@ -1416,28 +1417,17 @@ address {
 }
 
 .role-groupe {
-  display: block;
   width: auto;
   height: 342px;
+  left: 40px;
+  top: 112px;
+  margin-left: 20px;
 }
 
 @media screen and (min-width: 480px) {
   .role-groupe {
     position: absolute;
-    top: 112px;
-    left: 40px;
-    width: auto;
-    height: 342px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .role-groupe {
-    position: absolute;
-    top: 112px;
-    left: 40px;
-    width: auto;
-    height: 342px;
+    margin-left: 0px;
   }
 }
 
@@ -1683,7 +1673,7 @@ input:focus + .icon-box,
 .agreement__checkbox:checked + .agreement__icon {
   display: inline-block;
   background-color: #2196f3;
-  background-image: url(/images/icon_check.svg);
+  background-image: url(../images/icon_check.svg);
   background-size: contain;
   background-origin: border-box;
   border-color: #2196f3;
@@ -1743,7 +1733,7 @@ input:focus + .icon-box,
   font-size: 12px;
 }
 
-/*-- Оформлення форми  --*/
+/*-- Оформлення форми--*/
 /*--social-button--*/
 .social {
   margin-top: 60px;

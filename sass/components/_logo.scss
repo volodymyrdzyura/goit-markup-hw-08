@@ -11,7 +11,7 @@
   line-height: 1.16;
   letter-spacing: 0.03em;
 
-   @media screen and (min-width: 1200px) {
+  @media screen and (min-width: 1200px) {
     & {
       font-size: 26px;
       line-height: 1.19;
@@ -27,12 +27,13 @@
   }
 }
 footer .logo {
- text-align: center;
+  text-align: center;
   padding-top: 0px;
   padding-bottom: 0px;
 
-@media screen and (min-width: 1200px) {
-  & {
-    text-align: left;
+  @media screen and (min-width: 1200px) {
+    & {
+      text-align: left;
+    }
   }
-}}
+}

@@ -2,7 +2,7 @@
 .section-benefits {
   padding: 60px 0px;
   align-content: center;
-  
+
   @media screen and (min-width: 1200px) {
     & {
       padding: 94px 0px;
@@ -32,8 +32,6 @@
     }
   }
 
-
-
   &__text {
     color: $secondary-text-color;
     font-weight: 400;
@@ -49,7 +47,7 @@
   @media screen and (min-width: 468px) {
     &__item {
       max-width: 450px;
-     }
+    }
   }
 
   @media screen and (min-width: 768px) {

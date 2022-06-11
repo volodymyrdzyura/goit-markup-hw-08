@@ -1,45 +1,44 @@
 /*--Оформлення адресів у футері --*/
 
 address {
-    margin-top: 20px;}
+  margin-top: 20px;
+}
 
 .address {
-    
-&__location {
+  &__location {
     margin-bottom: 9px;
     text-align: center;
-}
+  }
 
-&__contact:hover,
-&__contact:focus {
+  &__contact:hover,
+  &__contact:focus {
     color: $hover-text-color;
-}
+  }
 
   @media screen and (min-width: 1200px) {
     &__location {
-          text-align: left;
-      }
+      text-align: left;
+    }
   }
 
-&__location:last-child {
+  &__location:last-child {
     margin-bottom: 0px;
-}
+  }
 
-&__location:first-child {
+  &__location:first-child {
     color: $absolut-white-header;
-}
+  }
 
-&__contact {
+  &__contact {
     color: rgba(255, 255, 255, 0.6);
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-}}
-
-[href*="https"] {
-    color: $absolut-white-header;
+  }
 }
 
-
+[href*="https"] {
+  color: $absolut-white-header;
+}
